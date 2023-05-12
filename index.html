@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container ">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="calculadora">
+              <input id="screenNumber" type="text" class="form-control resultado" placeholder="0" disabled="disabled">
+      
+              <div class="row">
+                <button onclick="calcular('acao', 'c')" type="button" class="btn btn-dark btn-lg font-weight-light clear">C</button>
+                <button onclick="calcular('acao', '/')" type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
+                <button onclick="calcular('acao', '*')" type="button" class="btn btn-dark btn-lg font-weight-light">x</button>
+              </div>
+      
+              <div class="row">
+                <button onclick="calcular('valor', 7)" type="button" class="btn btn-dark btn-lg font-weight-light">7</button>
+                <button onclick="calcular('valor', 8)" type="button" class="btn btn-dark btn-lg font-weight-light">8</button>
+                <button onclick="calcular('valor', 9)" type="button" class="btn btn-dark btn-lg font-weight-light">9</button>
+                <button onclick="calcular('acao', '-')" type="button" class="btn btn-dark btn-lg font-weight-light">-</button>
+              </div>
+      
+              <div class="row">
+                <button onclick="calcular('valor', 4)" type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
+                <button onclick="calcular('valor', 5)" type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
+                <button onclick="calcular('valor', 6)" type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
+                <button onclick="calcular('acao', '+')" type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
+              </div>
+      
+              <div class="row">
+                <button onclick="calcular('valor', 1)" type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
+                <button onclick="calcular('valor', 2)" type="button" class="btn btn-dark btn-lg font-weight-light">2</button>
+                <button onclick="calcular('valor', 3)" type="button" class="btn btn-dark btn-lg font-weight-light">3</button>
+                <button onclick="calcular('acao', '=')" type="button" class="btn btn-lg enter" id="igual">=</button>
+              </div>
+      
+              <div class="row" style="margin-top: -60px;">
+                <button onclick="calcular('valor', 0)" type="button" class="btn btn-dark zero btn-lg font-weight-light">0</button>
+                <button onclick="calcular('acao', '.')" type="button" class="btn btn-dark btn-md font-weight-light">.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
